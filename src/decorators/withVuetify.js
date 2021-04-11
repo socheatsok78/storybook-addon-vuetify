@@ -25,7 +25,7 @@ export const withVuetify = makeDecorator({
   wrapper: (Story, context, { parameters = {} }) => {
     VuetifyPlugin.install()
 
-    const theme = context.globals.theme
+    const theme = context.globals ? context.globals.theme : 'light'
     const isDark = theme === 'dark'
 
     const vuetify = new Vuetify(deepmerge({
