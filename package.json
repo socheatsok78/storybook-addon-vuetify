@@ -1,7 +1,7 @@
 {
   "name": "@socheatsok78/storybook-addon-vuetify",
   "version": "0.1.2",
-  "main": "dist/index.js",
+  "main": "dist/preset.js",
   "files": [
     "dist/*.js"
   ],
