@@ -44,8 +44,5 @@
   "peerDependencies": {
     "vue": "*",
     "vuetify": "*"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
