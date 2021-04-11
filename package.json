@@ -1,7 +1,8 @@
 {
   "name": "@socheatsok78/storybook-addon-vuetify",
   "version": "0.1.1",
-  "main": "dist/preset.js",
+  "main": "dist/index.js",
+  "files": ["dist/*.js"],
   "license": "MIT",
   "author": {
     "email": "alex@socheat.net",
@@ -18,7 +19,8 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "babel ./src --out-dir ./dist"
+    "build": "babel ./src --out-dir ./dist",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@mdi/font": "^5.9.55",
