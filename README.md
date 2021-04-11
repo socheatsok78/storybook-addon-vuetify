@@ -23,8 +23,22 @@ module.exports = {
 Add `vueitfy` decorator to `.storybook/preview.js`
 
 ```js
-import { addDecorator } from '@storybook/vue'
-import { withVuetify } from '@socheatsok78/storybook-addon-vuetify/dist/register'
+import { withVuetify, withThemeProvider } from '@socheatsok78/storybook-addon-vuetify/dist/decorators'
 
-addDecorator(withVuetify)
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    defaultValue: 'light',
+    toolbar: {
+      icon: 'circlehollow',
+      items: ['light', 'dark']
+    }
+  }
+}
+
+export const decorators = [
+  withThemeProvider,
+  withVuetify
+]
 ```
