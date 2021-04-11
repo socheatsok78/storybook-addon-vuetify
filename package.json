@@ -1,6 +1,6 @@
 {
   "name": "@socheatsok78/storybook-addon-vuetify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/preset.js",
   "license": "MIT",
   "author": {
