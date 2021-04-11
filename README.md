@@ -24,7 +24,7 @@ Add `vueitfy` decorator to `.storybook/preview.js`
 
 ```js
 import { addDecorator } from '@storybook/vue'
+import { withVuetify } from '@socheatsok78/storybook-addon-vuetify/dist/register'
 
-import withVuetify from '@socheatsok78/storybook-addon-vuetify/dist/register'
 addDecorator(withVuetify)
 ```
