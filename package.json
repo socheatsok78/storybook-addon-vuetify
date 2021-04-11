@@ -11,6 +11,11 @@
     "type": "git",
     "url": "git@github.com:socheatsok78/storybook-addon-vuetify.git"
   },
+  "keywords": [
+    "storybook",
+    "addons",
+    "vuetify"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel ./src --out-dir ./dist"
