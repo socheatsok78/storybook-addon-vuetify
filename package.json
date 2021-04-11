@@ -20,6 +20,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel ./src --out-dir ./dist",
+    "bump:release": "yarn version",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
