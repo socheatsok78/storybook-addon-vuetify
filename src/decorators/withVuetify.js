@@ -25,30 +25,12 @@ export const withVuetify = makeDecorator({
   wrapper: (Story, context, { parameters = {} }) => {
     VuetifyPlugin.install()
 
-    const theme = context.globals ? context.globals.theme : 'light'
-    const isDark = theme === 'dark'
-
-    const vuetify = new Vuetify(deepmerge({
-      theme: { dark: isDark }
-    }, parameters))
-
+    const vuetify = new Vuetify(deepmerge({}, parameters))
     const WrappedComponent = Story(context)
 
     return Vue.extend({
       vuetify,
-      props: {
-        light: { default: () => !isDark },
-        dark: { default: () => isDark }
-      },
       components: { WrappedComponent },
-      watch: {
-        dark: {
-          immediate: true,
-          handler(val) {
-            this.$vuetify.theme.dark = val
-          }
-        }
-      },
       template: `
         <v-app>
           <v-container fluid>
