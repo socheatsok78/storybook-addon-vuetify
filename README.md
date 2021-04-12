@@ -52,3 +52,6 @@ export const decorators = [
   withVuetify
 ]
 ```
+
+## License
+License under [MIT](LICENSE)
