@@ -1,6 +1,10 @@
 # @socheatsok78/storybook-addon-vuetify
 
-Storybook's Vuetify Addon
+📓  Storybook's Vuetify 🐉 Addon
+
+[![@npm][npm-badge]][npm-url]
+[![license][license-badge]](LICENSE)
+
 
 **Install**
 
@@ -54,4 +58,10 @@ export const decorators = [
 ```
 
 ## License
-License under [MIT](LICENSE)
+
+Licensed under the [MIT License](LICENSE).
+
+<!-- variables -->
+[npm-badge]: https://img.shields.io/npm/dw/@socheatsok78/storybook-addon-vuetify
+[npm-url]: https://npm.im/@socheatsok78/storybook-addon-vuetify
+[license-badge]: https://img.shields.io/github/license/socheatsok78/storybook-addon-vuetify
