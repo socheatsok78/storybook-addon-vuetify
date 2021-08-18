@@ -62,6 +62,6 @@ export const decorators = [
 Licensed under the [MIT License](LICENSE).
 
 <!-- variables -->
-[npm-badge]: https://img.shields.io/npm/dw/@socheatsok78/storybook-addon-vuetify
+[npm-badge]: https://img.shields.io/npm/dm/@socheatsok78/storybook-addon-vuetify
 [npm-url]: https://npm.im/@socheatsok78/storybook-addon-vuetify
 [license-badge]: https://img.shields.io/github/license/socheatsok78/storybook-addon-vuetify
