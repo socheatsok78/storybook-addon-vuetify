@@ -22,10 +22,10 @@ export const VuetifyPlugin = {
 export const withVuetify = makeDecorator({
   name: 'withVuetify',
   parameterName: 'vuetify',
-  wrapper: (Story, context, { parameters = {} }) => {
+  wrapper: (Story, context, { options = {} }) => {
     VuetifyPlugin.install()
 
-    const vuetify = new Vuetify(deepmerge({}, parameters))
+    const vuetify = new Vuetify(deepmerge({}, options))
     const WrappedComponent = Story(context)
 
     return Vue.extend({
