@@ -1,3 +1,7 @@
+> ### ⚠️⚠️ This repository is no longer maintained ⚠️⚠️
+> 
+> See https://github.com/mikinovation/storybook-addon-vuetify3
+
 # @socheatsok78/storybook-addon-vuetify
 
 📓  Storybook's Vuetify 🐉 Addon
